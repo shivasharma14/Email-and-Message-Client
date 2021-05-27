@@ -8,41 +8,52 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    tools:context=".MainActivity">
-<EditText
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:id="@+id/et_to"
-    android:hint="To"
-    android:padding="12dp"
-    android:background="@drawable/bg_round"/>
+    tools:context=".MainActivity"
+    android:background="@color/white">
 
     <EditText
+        android:id="@+id/et_to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/bg_round"
+        android:hint="To"
+        android:padding="12dp"
+        android:textColor="#333030"
+        android:textColorHint="#9C27B0" />
+
+    <EditText
         android:id="@+id/et_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round"
         android:hint="Subject"
         android:padding="12dp"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/bg_round"/>
+        android:textColor="#333030"
+        android:textColorHint="#9C27B0" />
+
     <EditText
+        android:id="@+id/et_body"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:layout_weight="1"
-        android:id="@+id/et_body"
+        android:background="@drawable/bg_round"
+        android:gravity="top"
         android:hint="Body"
         android:padding="12dp"
-        android:gravity="top"
-        android:layout_marginTop="8dp"
-        android:background="@drawable/bg_round"/>
+        android:textColor="#333030"
+        android:textColorHint="#9C27B0" />
 
     <Button
         android:id="@+id/bt_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:background="@drawable/bg_round"
         android:hint="Send"
-        android:textColorHint="#FBFAFA" />
+        android:textColorHint="#FBFAFA"
+        app:backgroundTint="#673AB7" />
 
 
 
