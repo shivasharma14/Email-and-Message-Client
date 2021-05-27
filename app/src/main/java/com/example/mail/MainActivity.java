@@ -51,11 +51,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //initialise properties
                 Properties properties=new Properties();
-                properties.put("mail.smtp.auth","true");
-                properties.put("mail.smtp.starttls.enable","true");
+                /*properties.put("mail.smtp.auth","true");
+                 properties.put("mail.smtp.starttls.enable","true");
                 properties.put("mail.smtp.host","smtp.gmail.com");
                 properties.put("smtp.port","587");
+                */
 
+                properties.put("mail.smtp.host", "smtp.gmail.com");
+                properties.put("mail.smtp.socketFactory.port", "465");
+                properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+                properties.put("mail.smtp.auth", "true");
+                properties.put("mail.smtp.port", "465");
                 //initialise session variables
                 Session session=Session.getInstance(properties, new Authenticator() {
                     @Override
@@ -75,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                     message.setFrom(new InternetAddress(email));
 
                     //Recipient email
-                    message.setRecipients(Message.RecipientType.TO,
+                    message.addRecipients(Message.RecipientType.TO,
                             InternetAddress.parse(etTo.getText().toString().trim()));
 
                     //Email Subject
