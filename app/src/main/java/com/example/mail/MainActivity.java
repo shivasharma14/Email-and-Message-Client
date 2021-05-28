@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         //assigning the variables
         etTo=findViewById(R.id.et_to);
         etSubject=findViewById(R.id.et_subject);
@@ -43,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
         btSend=findViewById(R.id.bt_send);
 
         //Sender's credentials
-        email="sharmashiva100s@gmail.com";
-        password="Ssquare100%";
+        email="sharmaspam100@gmail.com";
+        password="Ssquare100";
 
         btSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -160,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
             else{
                 //When error
                 Toast.makeText(getApplicationContext(),
-                        "Something went wrong?",
+                        "Invalid Recipient email. Try Again...",
                         Toast.LENGTH_SHORT).show();
             }
         }
