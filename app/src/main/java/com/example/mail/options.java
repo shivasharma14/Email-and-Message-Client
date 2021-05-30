@@ -41,7 +41,7 @@ public class options extends AppCompatActivity {
         log_out .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent sec2=new Intent(options.this,Login.class);
+              Intent sec2=new Intent(options.this,Welcome.class);
               sec2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
               startActivity(sec2);
 

@@ -9,7 +9,7 @@
     android:padding="16dp"
     android:gravity="center"
     tools:context=".message"
-    android:background="@color/white">
+    android:background="@drawable/bg1">
 
     <EditText
         android:id="@+id/et_phone_num"
@@ -20,7 +20,7 @@
         android:inputType="phone"
         android:layout_marginTop="20dp"
         android:padding="12dp"
-        android:textColor="#333030"
+        android:textColor="#7436d0"
         android:textColorHint="#9C27B0" />
 
     <EditText
@@ -33,7 +33,7 @@
         android:hint="Enter Message"
         android:gravity="top"
         android:padding="12dp"
-        android:textColor="#333030"
+        android:textColor="#7436d0"
         android:textColorHint="#9C27B0" />
     <Button
         android:id="@+id/bt_send"
@@ -41,10 +41,14 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/bg_round"
         android:hint="Send"
-        android:textColorHint="#FBFAFA"
-        app:backgroundTint="#673AB7" />
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/round"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="16sp"
+        app:backgroundTint="#F39ACF" />
 
 
 </LinearLayout>

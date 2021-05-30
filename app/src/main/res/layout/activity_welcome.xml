@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Welcome">
+
+
+
+    <TextView
+        android:id="@+id/textview_first"
+        android:layout_width="320dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="108dp"
+        android:fontFamily="@font/roboto_black"
+        android:lineSpacingExtra="36sp"
+        android:text="W E L C O M E !"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.34"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_first"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/round"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Next"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="14sp"
+        app:backgroundTint="#F39ACF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="349dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/bolditali"
+        android:text="Nice to see you again!"
+        android:textColor="#9278BD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_first" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,7 +9,7 @@
     android:padding="16dp"
     android:gravity="center"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@drawable/bg1">
 
     <EditText
         android:id="@+id/et_to"
@@ -19,7 +19,7 @@
         android:hint="To"
         android:padding="12dp"
         android:textColor="#333030"
-        android:textColorHint="#9C27B0" />
+        android:textColorHint="#7436d0" />
 
     <EditText
         android:id="@+id/et_subject"
@@ -30,7 +30,7 @@
         android:hint="Subject"
         android:padding="12dp"
         android:textColor="#333030"
-        android:textColorHint="#9C27B0" />
+        android:textColorHint="#7436d0" />
 
     <EditText
         android:id="@+id/et_body"
@@ -43,17 +43,21 @@
         android:hint="Body"
         android:padding="12dp"
         android:textColor="#333030"
-        android:textColorHint="#9C27B0" />
+        android:textColorHint="#7436d0" />
 
     <Button
         android:id="@+id/bt_send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:background="@drawable/bg_round"
         android:hint="Send"
-        android:textColorHint="#FBFAFA"
-        app:backgroundTint="#673AB7" />
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:background="@drawable/round"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="16sp"
+        app:backgroundTint="#F39ACF"/>
 
 
 
