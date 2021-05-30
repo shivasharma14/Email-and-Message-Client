@@ -3,6 +3,7 @@ package com.example.mail;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.Html;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
     EditText etTo,etSubject,etBody;
     Button btSend;
     String email,password;
+    String rmail;
 
 
     @Override
@@ -43,10 +45,15 @@ public class MainActivity extends AppCompatActivity {
         etSubject=findViewById(R.id.et_subject);
         etBody=findViewById(R.id.et_body);
         btSend=findViewById(R.id.bt_send);
+        rmail=etTo.getText().toString().trim();
 
         //Sender's credentials
-        email="sharmaspam100@gmail.com";
-        password="Ssquare100";
+        //email="sharmaspam100@gmail.com";
+        //password="Ssquare100";
+
+        Intent i=getIntent();
+        email=i.getStringExtra("s_email");
+        password=i.getStringExtra("s_pass");
 
         btSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
                  properties.put("mail.smtp.starttls.enable","true");
                 properties.put("mail.smtp.host","smtp.gmail.com");
                 properties.put("smtp.port","587");
-                */
+
+                 */
 
                 properties.put("mail.smtp.host", "smtp.gmail.com");
                 properties.put("mail.smtp.socketFactory.port", "465");

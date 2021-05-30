@@ -3,6 +3,7 @@
     package="com.example.mail">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
 
     <application
         android:allowBackup="true"
@@ -10,7 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".message"></activity>
+        <activity android:name=".options" />
+        <activity android:name=".Register" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
