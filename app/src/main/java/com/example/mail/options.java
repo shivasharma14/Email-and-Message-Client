@@ -42,6 +42,7 @@ public class options extends AppCompatActivity {
             @Override
             public void onClick(View v) {
               Intent sec2=new Intent(options.this,Login.class);
+              sec2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
               startActivity(sec2);
 
             }
