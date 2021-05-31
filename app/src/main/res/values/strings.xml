@@ -5,7 +5,20 @@
     <string name="new_user">New User?</string>
     <string name="register">Register</string>
     <string name="login">Login</string>
-    <string name="email">Email Address</string>
+    <string name="email">Enter Email Address</string>
     <string name="pwd">Password</string>
     <string name="confirm_pwd">Confirm Password</string>
+    <string name="new_email">Send New Email</string>
+    <string name="phone">Enter Phone Number</string>
+    <string name="msg">Enter Message</string>
+    <string name="send">Send</string>
+    <string name="mail">Mail</string>
+    <string name="message">Text Message</string>
+    <string name="logout">Logout</string>
+    <string name="welcome_options">Choose your options</string>
+    <string name="or">Or</string>
+    <string name="textview">TextView</string>
+    <string name="welcome_welcome">W E L C O M E!</string>
+    <string name="welcome_msg">Nice to see you again!</string>
+    <string name="next">Next</string>
 </resources>
