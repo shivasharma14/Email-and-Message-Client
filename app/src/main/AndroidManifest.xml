@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity android:name=".singlerow"></activity>
-        <activity android:name=".mail_inbox" />
+        <activity android:name=".mail_outbox" />
         <activity android:name=".Login" />
         <activity android:name=".message" />
         <activity android:name=".options" />
@@ -27,4 +27,4 @@
         </activity>
     </application>
 
-</manifest>
+</manifest> 
