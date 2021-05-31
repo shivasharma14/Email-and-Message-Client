@@ -21,4 +21,7 @@
     <string name="welcome_welcome">W E L C O M E!</string>
     <string name="welcome_msg">Nice to see you again!</string>
     <string name="next">Next</string>
+    <string name="to">To</string>
+    <string name="body">Body</string>
+    <string name="subject">Subject</string>
 </resources>
