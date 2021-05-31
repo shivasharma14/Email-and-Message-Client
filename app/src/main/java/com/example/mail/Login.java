@@ -68,7 +68,7 @@ public class Login extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(Login.this,
-                                            "Login Successful", Toast.LENGTH_LONG).show();
+                                            "Login Successful", Toast.LENGTH_SHORT).show();
 
                                     Intent i=new Intent(Login.this,options.class);
                                     i.putExtra("sender_mail",smail);
@@ -78,7 +78,7 @@ public class Login extends AppCompatActivity {
                                 }
                                 else {
                                     Toast.makeText(Login.this,
-                                            "User Not found", Toast.LENGTH_LONG).show();
+                                            "User Not found", Toast.LENGTH_SHORT).show();
 
                                 }
 
