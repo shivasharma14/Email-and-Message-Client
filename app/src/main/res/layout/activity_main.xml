@@ -15,8 +15,9 @@
         android:id="@+id/et_to"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints="email"
         android:background="@drawable/bg_round"
-        android:hint="To"
+        android:hint="@string/to"
         android:padding="12dp"
         android:textColor="#333030"
         android:textColorHint="#7436d0" />
@@ -27,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/bg_round"
-        android:hint="Subject"
+        android:hint="@string/subject"
         android:padding="12dp"
         android:textColor="#333030"
         android:textColorHint="#7436d0" />
@@ -40,7 +41,7 @@
         android:layout_weight="1"
         android:background="@drawable/bg_round"
         android:gravity="top"
-        android:hint="Body"
+        android:hint="@string/body"
         android:padding="12dp"
         android:textColor="#333030"
         android:textColorHint="#7436d0" />
@@ -50,14 +51,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:hint="Send"
+        android:background="@drawable/round"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/send"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:background="@drawable/round"
-        android:fontFamily="@font/roboto_regular"
         android:textSize="16sp"
-        app:backgroundTint="#F39ACF"/>
+        app:backgroundTint="#F39ACF" />
 
 
 
