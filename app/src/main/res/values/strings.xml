@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Mail</string>
+    <string name="welcome">Hello There!</string>
+    <string name="welcome_register">Register Here!</string>
+    <string name="new_user">New User?</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="email">Email Address</string>
+    <string name="pwd">Password</string>
+    <string name="confirm_pwd">Confirm Password</string>
 </resources>
