@@ -8,7 +8,6 @@
     tools:context=".Welcome">
 
 
-
     <TextView
         android:id="@+id/textview_first"
         android:layout_width="320dp"
@@ -16,7 +15,7 @@
         android:layout_marginTop="108dp"
         android:fontFamily="@font/roboto_black"
         android:lineSpacingExtra="36sp"
-        android:text="W E L C O M E !"
+        android:text="@string/welcome_welcome"
         android:textColor="@color/white"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +30,7 @@
         android:layout_marginTop="52dp"
         android:background="@drawable/round"
         android:fontFamily="@font/roboto_regular"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="#FFFFFF"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#FFFFFF"
@@ -49,7 +48,7 @@
         android:layout_height="40dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/bolditali"
-        android:text="Nice to see you again!"
+        android:text="@string/welcome_msg"
         android:textColor="#9278BD"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
