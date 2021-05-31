@@ -25,27 +25,18 @@ public class options extends AppCompatActivity {
         sendmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sec=new Intent(options.this,mail_inbox.class);
+                Intent sec=new Intent(options.this, mail_outbox.class);
                 sec.putExtra("s_email",sm);
                 sec.putExtra("s_pass",sg);
                 startActivity(sec);
             }
         });
-        sendmsg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sec1=new Intent(options.this,message.class) ;
-                sec1.putExtra("s_email",sm);
-                sec1.putExtra("s_pass",sg);
-                startActivity(sec1);
-            }
-        });
         log_out .setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-              Intent sec2=new Intent(options.this,Welcome.class);
-              sec2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
-              startActivity(sec2);
+                Intent sec2=new Intent(options.this,Welcome.class);
+                sec2.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK|Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(sec2);
 
             }
         });
