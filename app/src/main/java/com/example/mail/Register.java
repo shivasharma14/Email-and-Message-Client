@@ -32,11 +32,6 @@ public class Register extends AppCompatActivity {
         etcpass=findViewById(R.id.person_pass2);
         btRegister1=findViewById(R.id.button_reg);
 
-
-
-
-
-
         //setting on click listener for button
         btRegister1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,19 +50,19 @@ public class Register extends AppCompatActivity {
 
                 if(TextUtils.isEmpty(semail)) {
                     Toast.makeText(Register.this,
-                            "Please enter Email", Toast.LENGTH_LONG).show();
+                            "Please enter Email", Toast.LENGTH_SHORT).show();
                         return;
                 }
                 if(TextUtils.isEmpty(sepass))
                 {
                     Toast.makeText(Register.this,
-                            "Please enter Password", Toast.LENGTH_LONG).show();
+                            "Please enter Password", Toast.LENGTH_SHORT).show();
                         return;
                 }
                if(TextUtils.isEmpty(cpass))
                 {
                     Toast.makeText(Register.this,
-                            "Please enter Confirm Password", Toast.LENGTH_LONG).show();
+                            "Please enter Confirm Password", Toast.LENGTH_SHORT).show();
                             return;
                 }
                 if(sepass.length()<8)
@@ -95,14 +90,14 @@ public class Register extends AppCompatActivity {
                                public void onComplete(@NonNull Task<AuthResult> task) {
                                    if (task.isSuccessful()) {
                                        Toast.makeText(Register.this,
-                                               "Registration Successful", Toast.LENGTH_LONG).show();
+                                               "Registration Successful", Toast.LENGTH_SHORT).show();
                                        startActivity(new Intent(getApplicationContext(),Login.class));
 
 
                                    }
                                    else {
                                        Toast.makeText(Register.this,
-                                               "Registration Failed", Toast.LENGTH_LONG).show();
+                                               "Registration Failed", Toast.LENGTH_SHORT).show();
 
                                    }
 
