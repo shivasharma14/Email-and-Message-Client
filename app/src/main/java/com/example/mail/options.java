@@ -25,7 +25,7 @@ public class options extends AppCompatActivity {
         sendmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent sec=new Intent(options.this,MainActivity.class);
+                Intent sec=new Intent(options.this,mail_inbox.class);
                 sec.putExtra("s_email",sm);
                 sec.putExtra("s_pass",sg);
                 startActivity(sec);
@@ -35,6 +35,8 @@ public class options extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent sec1=new Intent(options.this,message.class) ;
+                sec1.putExtra("s_email",sm);
+                sec1.putExtra("s_pass",sg);
                 startActivity(sec1);
             }
         });

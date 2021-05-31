@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import java.util.Properties;
 
 import javax.mail.Authenticator;
@@ -32,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     Button btSend;
     String email,password;
     String rmail;
+    FirebaseDatabase rootNode = FirebaseDatabase.getInstance();;
+    DatabaseReference reference, reference1;
 
 
     @Override
@@ -103,9 +108,11 @@ public class MainActivity extends AppCompatActivity {
                     //Send email
                     new SendMail().execute(message);
 
+
                 } catch (MessagingException e) {
                     e.printStackTrace();
                 }
+
 
 
             }
@@ -157,6 +164,17 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dialog.dismiss();
+                        String []se=email.split("@");
+                        String r = etTo.getText().toString();
+                        String su = etSubject.getText().toString();
+                        String m = etBody.getText().toString();
+
+                        reference = rootNode.getReference("Email" );
+                        DatabaseReference mailRef = reference.child(se[0]);
+                        String key = mailRef.push().getKey(); //generating a unique key
+                        UserHelper user = new UserHelper(r,su,m);
+                        mailRef.child(key).setValue(user); //setting the object node
+
                         //Clear all the edit text fields
                         etTo.setText("");
                         etSubject.setText("");
